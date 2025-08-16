@@ -34,8 +34,8 @@ def transform_text(text):
     return " ".join(y)
 
 # Load model and vectorizer
-tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
-model = pickle.load(open('model.pkl', 'rb'))
+tfidf = pickle.load(open('artifacts/vectorizer.pkl', 'rb'))
+model = pickle.load(open('artifacts/model.pkl', 'rb'))
 
 # --- Webpage Styling ---
 st.set_page_config(page_title="Spam Detector", page_icon="📩", layout="centered")
